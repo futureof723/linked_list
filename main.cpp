@@ -10,6 +10,16 @@ struct Link {
         : value(std::move(value)), prev(p), next(s) {}
 };
 
+void display_forwards(const Link* head) {
+    if (head == nullptr) {
+        return;
+    }
+    while (head != nullptr) {
+        std::cout << head->value << std::endl;
+        head = head->next;
+    }
+}
+
 int main() {
     // Create the first node ("Thor")
     const auto thor = new Link("Thor");
