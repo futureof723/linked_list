@@ -20,7 +20,7 @@ void display_forwards(const Link* head) {
     }
 }
 
-void display_backwards(Link* head) {
+void display_backwards(const Link* head) {
     if (head == nullptr) {
         return;
     }
